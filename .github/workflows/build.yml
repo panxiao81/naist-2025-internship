@@ -1,0 +1,11 @@
+name: Test
+on: [push]
+jobs:
+    on_build_actions:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Run test
+              run: |
+                cd $GITHUB_WORKSPACE/devops/course/exercise-2/testing
+                python3 -m unittest
