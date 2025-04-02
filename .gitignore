@@ -1,0 +1,7 @@
+venv
+.coverage
+*.csv
+*.xlsx
+.tox
+coverage.xml
+.ipynb_checkpoints
